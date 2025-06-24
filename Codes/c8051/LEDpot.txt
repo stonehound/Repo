@@ -1,0 +1,40 @@
+#include <Serial.h>
+
+#define A0 11
+#define A1 14
+#define A2 15 // also MISO!
+#define A3 32
+
+#define ANALOG_IN  A3
+#define ANALOG_OUT  A0
+#define VREF       3.3
+
+// the setup routine runs once when you press reset:
+void setup() {
+  // No need to init USBSerial
+
+  // By default 8051 enable every pin's pull up resistor. Disable pull-up to get full input range.
+  pinMode(ANALOG_IN, INPUT);
+  pinMode(ANALOG_OUT, OUTPUT);
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  // read the input on analog pin 3, P1.1:
+  int sensorValue = analogRead(ANALOG_IN);
+
+  // float to manage voltage range for LED
+  float LEDv = (sensorValue / 1.8) + 1.4;
+
+  // writes sensor value to analog pin 0 for LED
+  analogWrite(ANALOG_OUT, LEDv);
+  
+  // Convert the analog reading (which goes from 0 - 255) to VREF:
+  float voltage = sensorValue * (VREF / 255.0);
+  // print out the value you read:
+  USBSerial_println(voltage);
+  // or with precision:
+  //USBSerial_println(voltage,1);
+
+  delay(10);
+}
