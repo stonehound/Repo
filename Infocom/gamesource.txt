@@ -1,0 +1,2 @@
+#The main source of these games is The Interactive Fiction Database:
+https://ifdb.org/
