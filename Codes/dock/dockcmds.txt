@@ -1,0 +1,21 @@
+#List Docker Commands and descriptions
+
+General Commands:
+
+
+Images:
+
+
+
+Docker Hub:
+
+
+
+Containers:
+docker run
+docker ps
+docker 
+
+
+source:
+https://docs.docker.com/get-started/docker_cheatsheet.pdf
