@@ -20,7 +20,9 @@ docker kill, forceful end.
 docker stop, graceful end.
 docker container prune, ends all unused containers.
 docker rm $(docker ps -a -f status=exited -f status=created -q), removes exited & created containers.
-docker exec -it <container> bash,re-enters exited container with terminal.
+docker exec -it <container> bash,re-enters exited container with terminal. This failed 24 hours later...
+docker start `docker ps -q -l` <exited container name>, starts an exited container changing its status to running.
+docker attach <running container>, attaches a running container to terminal & stdin.
 
 source:
 https://docs.docker.com/get-started/docker_cheatsheet.pdf
