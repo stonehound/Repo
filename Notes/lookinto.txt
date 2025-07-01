@@ -1,0 +1,2 @@
+//This is a list of resources and tools to look into:
+-Technitium, a webtool that can outperform pihole and create secure DSN servers: https://technitium.com/ 

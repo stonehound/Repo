@@ -7,6 +7,7 @@ Images:
 docker images, lists images on local host.
 docker rmi, deletes image.
 docker inspect, displays detailed info about docker construction in .JSON format.
+docker pull, pull on image from the docker repository.
 
 Docker Hub:
 
@@ -14,12 +15,15 @@ Docker Hub:
 
 Containers:
 docker run, gets daemon to run the image and create a container.
+docker run <image>:<tag>
 docker run -it alpine /bin/sh, opens an alpine terminal shell, -it refers to interactive teletypewriter.
+docker run --rm, automatically deletes the container when exited.
 docker ps -a, lists all containers. 
 docker kill, forceful end.
 docker stop, graceful end.
 docker container prune, ends all unused containers.
 docker rm $(docker ps -a -f status=exited -f status=created -q), removes exited & created containers.
+docker rm $(docker ps -a -q -f status=exited), removes exited containers, comparable to prune. 
 docker exec -it <container> bash,re-enters exited container with terminal. This failed 24 hours later...
 docker start `docker ps -q -l` <exited container name>, starts an exited container changing its status to running.
 docker attach <running container>, attaches a running container to terminal & stdin.

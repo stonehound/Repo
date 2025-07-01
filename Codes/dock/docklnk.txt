@@ -1,0 +1,4 @@
+#Resources for docker coding:
+-smallest website busybox: https://lipanski.com/posts/smallest-docker-image-static-website
+-docker tutorial for beginners hello world example: https://docker-curriculum.com/#hello-world
+-STM32 compiler via docker: https://hub.docker.com/r/jasonyangee/stm32-builder
