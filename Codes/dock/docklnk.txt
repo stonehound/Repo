@@ -2,3 +2,8 @@
 -smallest website busybox: https://lipanski.com/posts/smallest-docker-image-static-website
 -docker tutorial for beginners hello world example: https://docker-curriculum.com/#hello-world
 -STM32 compiler via docker: https://hub.docker.com/r/jasonyangee/stm32-builder
+-Technitium DNS server via docker: https://hub.docker.com/r/technitium/dns-server
+-Technitium for RPi tutorial via install: https://blog.technitium.com/2019/01/turn-raspberry-pi-into-network-wide-dns.html
+-Technitium DNS server github repo: https://github.com/TechnitiumSoftware/DnsServer/tree/master
+_Tehcnetium DNS Server Rpi tutorial: https://androides.nl/how-to-create-a-technitium-dns-server/
+-Docker Compose quickstart guide: https://docs.docker.com/compose/gettingstarted/
