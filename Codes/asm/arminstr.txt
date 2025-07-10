@@ -1,0 +1,42 @@
+@ This is a reference for ARM Instruction Set Commands:
+
+General Form:
+MNEMONIC{S}{condition} {Rd}, Operand1, Operand2
+
+MNEMONIC - Short name of the instruction
+{S} - An optional suffix. It S is specified, the condition flags are updated on the result of the operand
+{condition} - Condition needed to start the instruction 
+{Rd} - Register (destination)for storing the result of the instruction
+Operand1 - First operand, either a register or immediate value
+Operand2 - Second (flexible) operand, can be animmediate value or a register with an optional shift
+
+Instruction List:
+ADD - Adds two numbers
+SUB - Subtracts two numbers
+MUL - Multiplication
+MOV - Moves data
+MVN - Move & negate
+LSL - Logical shift left
+LSR - Logical shift right
+ASR - Arithmetic shift right
+ROR - Rotate right
+CMP - Compare
+AND - Bitwise AND
+ORR - Bitwise OR
+EOR - Bitwise XOR
+LDR - Load
+STR - Store
+LDM - Load multiple
+STM - Store multiple
+PUSH - Push onto stack
+POP - Pop off stack 
+B - Branch
+BL - Branch with link
+BX - Branch with eXchange
+BLX - Branch with link & eXchange
+SWI/SVC - System Call
+
+Writing Comments:
+@ This is supposed to be sufficient for a one-line comment, standalone or following an instruction
+; This is supposed to serve the same function as the above @
+/* Anything enclosed within is a comment, this can function between multiple lines  */ 

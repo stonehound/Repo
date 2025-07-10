@@ -1,0 +1,11 @@
+@ Notes on how assembly works.
+
+How to compile assembly is GCC:
+/*First the Assembler is called, with -o output flag, followed by the name of the output object file, followed by the name of the source file*/
+as -o output.o input.s
+
+/*Then Linker is called to combine object files and resolve references to machine code locations in the final eexcutable*/
+ld -o exectuable output.o
+
+/*Lastly we can run the executable*/
+./executable
