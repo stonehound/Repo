@@ -11,7 +11,7 @@ MNEMONIC - Short name of the instruction
 {condition} - Condition needed to start the instruction 
 {Rd} - Register (destination)for storing the result of the instruction
 Operand1 - First operand, either a register or immediate value
-Operand2 - Second (flexible) operand, can be animmediate value or a register with an optional shift
+Operand2 - Second (flexible) operand, can be an immediate value or a register with an optional shift
 
 Instruction List:
 ADD - Adds two numbers
