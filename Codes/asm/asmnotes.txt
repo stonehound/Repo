@@ -1,19 +1,24 @@
 @ Notes on how assembly works.
 
 How to compile assembly is GCC:
-/*First the Assembler is called, with -o output flag, followed by the name of the output object file, followed by the name of the source file*/
+First the Assembler is called, with -o output flag, followed by the name of the output object file, followed by the name of the source file.
 as -o output.o input.s
 
-/*Then Linker is called to combine object files and resolve references to machine code locations in the final eexcutable*/
-ld -o exectuable output.o
+Then Linker is called to combine object files and resolve references to machine code locations in the final excutable. For instance, the Linker identifies and sets the start of the program with respect to the <_start:> label:
+ld -o executable output.o
 
-/*Lastly we can run the executable*/
+Lastly we can run the executable:
 ./executable
+
+***In the case of linking branching source files:
+as -o part1.o part1.s
+as -o part2.o part2.s
+ld -o allparts part1.o part2.o 
+./allparts
 
 Notes on ARM, RISC, and its relationship to CISC:
 ARM is a RISC (Reduced instruction set Computing) processor and therefore has a simplified instruction set (100 instructions or less) and more general purpose registers than CISC. Unlike Intel, ARM uses instructions that operate only on registers and uses a Load/Store memory model for memory access, which means that only Load/Store instructions can access memory. This means that incrementing a 32-bit value at a particular memory address on ARM would require three types of instructions (load, increment and store) to first load the value at a particular address into a register, increment it within the register, and store it back to the memory from the register.
 
 The reduced instruction set has its advantages and disadvantages. One of the advantages is that instructions can be executed more quickly, potentially allowing for greater speed (RISC systems shorten execution time by reducing the clock cycles per instruction). The downside is that less instructions means a greater emphasis on the efficient writing of software with the limited instructions that are available. Also important to note is that ARM has two modes, ARM mode and Thumb mode. Thumb instructions can be either 2 or 4 bytes.
-
 
 

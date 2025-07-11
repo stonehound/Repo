@@ -1,6 +1,9 @@
 @ This is a reference for ARM Instruction Set Commands:
 
-General Form:
+General Form for Individual Statement in Source Code:
+<label:> <instruction> @ comment
+
+General Form for Instructions:
 MNEMONIC{S}{condition} {Rd}, Operand1, Operand2
 
 MNEMONIC - Short name of the instruction
@@ -34,7 +37,12 @@ B - Branch
 BL - Branch with link
 BX - Branch with eXchange
 BLX - Branch with link & eXchange
+BAL - Branch always
 SWI/SVC - System Call
+
+Defining a Global Variable:
+Global variables can be accessed via branching between seperate source files, reminds me of how libraries function in C.
+.global _variablename
 
 Writing Comments:
 @ This is supposed to be sufficient for a one-line comment, standalone or following an instruction
