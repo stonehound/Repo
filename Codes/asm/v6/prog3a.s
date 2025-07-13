@@ -1,7 +1,8 @@
-/* Test assembly code, first example in chapter 3 of asm for rpi */
+/* Recreating the first example program from chapter 3 of asm for rpi */
 
 	.global _start
+
 _start:
-	MOV R0, #65
-	MOV R7, #1
-	SWI 0
+	mov x0, #26
+	mov x7, #1
+	svc 0

@@ -1,0 +1,17 @@
+/* This is a note about qemu virtualization */
+
+Overview:
+QEMU’s system emulation provides a virtual model of a machine (CPU, memory and emulated devices) to run a guest OS. It supports a number of hypervisors (known as accelerators) as well as a JIT known as the Tiny Code Generator (TCG) capable of emulating many CPUs.
+
+Invocation:
+qemu-system-x86_64 <option> <image>
+
+Abbreviate Invocation:
+qemu <option> <image>
+
+Notes on Invocation:
+disk_image is a raw hard disk image for IDE hard disk 0. Some targets do not need a disk image.
+
+When dealing with options parameters as arbitrary strings containing commas, such as in “file=my,file” and “string=a,b”, it’s necessary to double the commas. For instance,”-fw_cfg name=z,string=a,,b” will be parsed as “-fw_cfg name=z,string=a,b”.
+
+
