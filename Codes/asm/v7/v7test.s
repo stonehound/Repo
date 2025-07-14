@@ -4,4 +4,4 @@
 _start:
 	mov x0, #65
 	mov x7, #1
-	svc 0
+	swi 0
