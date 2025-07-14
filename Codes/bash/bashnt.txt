@@ -1,0 +1,6 @@
+# This is a reference for coding BASH scripts:
+
+
+
+Reference:
+https://github.com/bobbyiliev/introduction-to-bash-scripting/tree/main/ebook/en/content
