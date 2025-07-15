@@ -1,0 +1,16 @@
+/* This is the reference being used to learn and test qemu */
+
+To create a test virtual machine called myVirtualDisk.qcow2:
+qemu-img create -f qcow2 myVirtualDisk.qcow2 20G
+
+To check on this:
+file myVirutalDisk.qcow2
+Note the output suggests thisthis takes up 20GB or 21474836480 bytes
+
+ls -l myVirtualDisk.qcow2
+Note this output shows that only 196928 bytes of host hard drive space
+
+
+Link:
+https://www.baeldung.com/linux/qemu-from-terminal
+
