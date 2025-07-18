@@ -13,6 +13,7 @@ MNEMONIC - Short name of the instruction
 Operand1 - First operand, either a register or immediate value
 Operand2 - Second (flexible) operand, can be an immediate value or a register with an optional shift
 
+
 Instruction List:
 ADD - Adds two numbers
 SUB - Subtracts two numbers
@@ -33,6 +34,7 @@ LDM - Load multiple
 STM - Store multiple
 PUSH - Push onto stack
 POP - Pop off stack 
+PC - Shorthand for R15, the Program Counter
 B - Branch
 BL - Branch with link
 BX - Branch with eXchange
@@ -40,9 +42,22 @@ BLX - Branch with link & eXchange
 BAL - Branch always
 SWI/SVC - System Call
 
+
 Defining a Global Variable:
 Global variables can be accessed via branching between seperate source files, reminds me of how libraries function in C.
 .global _variablename
+
+
+Instruction Examples:
+Load -
+LDR R1, [R5] @ Load R1 with the contents of location R5, [] brackets indicate register containing location address
+
+Store -
+STR R1, [R6] @ Store R1 information in location R6 
+
+Move - 
+MOV PC, R0 @ Move R0 into R15, the Program Counter. One should not interact with R15 unintensionally or risk crashing.
+
 
 Writing Comments:
 @ This is supposed to be sufficient for a one-line comment, standalone or following an instruction

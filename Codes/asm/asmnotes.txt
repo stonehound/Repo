@@ -37,8 +37,12 @@ R14: LR (Link Register). When a function call is made, the Link Register gets up
 
 R15: PC (Program Counter). The Program Counter is automatically incremented by the size of the instruction executed. This size is always 4 bytes in ARM state and 2 bytes in THUMB mode. When a branch instruction is being executed, the PC holds the destination address. During execution, PC stores the address of the current instruction plus 8 (two ARM instructions) in ARM state, and the current instruction plus 4 (two Thumb instructions) in Thumb(v1) state. This is different from x86 where PC always points to the next instruction to be executed.
 
+Current Program Status Register(CPSR): Stores information about the current programming and the results of its operations. It is a 32 bit register with bits 0-4 designated for MODE. The four most significant bits, 28-31, are designated to flag certain conditions.
+N = Negative Flag(31)
+Z = Zero Flag(30)
+C = Carry Flag(29)
+V = Overflow Flag(28)  
 
 
-
-Referece:
+Reference:
 https://azeria-labs.com/arm-data-types-and-registers-part-2/
