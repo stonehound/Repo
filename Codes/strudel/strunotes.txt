@@ -1,0 +1,25 @@
+//Notes for Strudel music making with code//
+
+Controlling REPL:
+Crt & Enter , run code
+Crt & + , stop code
+
+
+Functions:
+setcmp(180/4) , set the cycles per minute, this would be 45CMP rather than the default 30CPM
+
+sound() , function that plays samples
+sound(insect:0) , plays sample index 0 from sample set 'insect'
+sound("bd hh sd").bank("RolandTR707") , play bass drum, high hat, and snare samples from a Roland TR707 drum machine  
+ - Note , adding more samples into the input of the sound() function changes the tempo to accomodate the preset 2 second Cycle every sound is fit into
+sound("<bd hh sd oh>") , the <> causes every sample to be played for one Cycle, this would play over the course of 8 seconds
+sound("<bd hh sd oh>*16") , This speeds up each cycle 16 times the normal speed, this would play over the course of .5 seconds
+sound("bd - sd - oh") , use - or ~ as a rest
+sound("bd [hh hh] bd [sn sn]") , use [] to create subsequences, fraction subdivisions of cycles per sample
+
+
+Resources:
+-REPL
+https://strudel.cc
+-Documentation
+https://strudel.cc/workshop/getting-started/
