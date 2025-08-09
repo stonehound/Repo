@@ -1,0 +1,6 @@
+# This is a reference for how to plot in terminal with python
+
+Installed gnuplot and a python port of it call pygnuplot
+
+Resource Link:
+https://pypi.org/project/py-gnuplot/
