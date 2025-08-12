@@ -1,14 +1,9 @@
-# This is a reference for how to plot in terminal with python
-
-Installed gnuplot and a python port of it call pygnuplot
-
-Example:
 #py-gnuplot: A quick demo
 #!/usr/bin/env python3
 #coding=utf8
 from pygnuplot import gnuplot
 
-#Ceate a gnuplot context. with "log = True" to print the gnuplot execute log.
+#Create a gnuplot context. with "log = True" to print the gnuplot execute log.
 g = gnuplot.Gnuplot(log = True)
 
 #Set plotting style
@@ -30,6 +25,3 @@ g.cmd('Gauss(x,mu,sigma) = 1./(sigma*sqrt(2*pi)) * exp( -(x-mu)**2 / (2*sigma**2
 g.plot('d1(x) fs solid 1.0 lc rgb "forest-green" title "μ =  0.5 σ = 0.5"',
         'd2(x) lc rgb "gold" title "μ =  2.0 σ = 1.0"',
         'd3(x) lc rgb "dark-violet" title "μ = -1.0 σ = 2.0"')
-
-Resource Link:
-https://pypi.org/project/py-gnuplot/
