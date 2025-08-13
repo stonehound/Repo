@@ -1,4 +1,4 @@
-# Testing matplotlib
+# Matplot Example
 import matplotlib.pyplot as plt
 import numpy as np
 
