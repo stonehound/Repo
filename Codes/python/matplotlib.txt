@@ -1,0 +1,45 @@
+# Reference for using the Matplotlib library for python
+
+Pyplot - matlib.pyplot is a collection of functions that makes matlib act like MATLAB. Functions create figures, creates a plotting area in the figure, plots lines in the plotting area within the figure, decorate the plot with labels.
+
+Examples 1:
+# Import Matlibplot library
+import matplotlib.pyplot as plt
+
+# plt.plot() is a function that can  to put these four data points into the plotting area
+plt.plot([1, 2, 3, 4])
+# Create a label for the vertival axis
+plt.ylabel('some numbers')
+# Create visualization of the plot
+plt.show()
+
+# This example would produce a graph with the horizontal axis ranging from 0 to 3, as there are four data points to be plotted and python begins indexing information starting from 0. The plot presents itself as a blue continuous line. This is because the default plotting option withing plt.plot() is 'b-' for a blue continuous line.
+
+
+Example 2:
+import matplotlib.pyplot as plt
+
+# The first set of numbers will determine the labeling of the horizontal axis
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16])
+plt.ylabel('some numbers')
+plt.show()
+
+# This example would produce a graph in which the horizontal axis ranges from 0 to 4, while the vertical axis ranges from 0 to 16. This results in graph with a low resolution pattern comparable to f(x) = x^2.
+
+
+Examples 3:
+import matplotlib.pyplot as plt
+
+# The code in the '' indicates the plotted points being represented as red circles
+plt.plot([1, 2, 3, 4], [1, 4, 9, 16], 'ro')
+# The first two values determine the range of the horizontal axis, while the second two numbers represent the range of the vertical axis
+plt.axis((0, 6, 0, 20))
+plt.show()
+
+# This example produces a graph in which the range of the horizontal axis is set to 0 to 6, while the range of the vertical axis is set to 0 to 20. The plot takes the form of distinct individual data points as opposed to a continuous line. The color of the plotted points has been set to red.
+
+
+
+
+Reference:
+https://matplotlib.org/stable/tutorials/index

@@ -4,7 +4,7 @@ import numpy as np
 
 t = np.linspace(-100, 100, 10000)
 
-func = 3*(np.sin(t/20))
+func = 3.2*(np.cos(t/30))
 
 fig, ax = plt.subplots()
 ax.axhline(y=0, color="black", linestyle="--")
