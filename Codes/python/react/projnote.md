@@ -17,4 +17,5 @@ On that note, I intend to run a light-weight distribution of Linux for the opera
 While I have some progress with Supriya, I'm going to try FoxDot instead as it's fully developed and supported while Supriya is barely a year old at this point. I'm also trying to migrate or at least back up all work onto a github repo for quick redeployment once the new Raspberry Pi 4b arrives. I may try to split screen, having one HDMI port dedicated to live coding and the other to the reactive video being generated.
 Cairo can be used to create images, which can be automated to be generated to create a sequence of images that serve as the animation. This will require a lot of work in just setting up the animations, let alone connecting it to FoxDot via Signified. For similar reasons, I'll be trying out Manim for animation and reactivity in conjunction with FoxDot because it has existed longer and has more support and examples. 
 
-
+9/15/2025
+After struggling to get Manim installed on RaspberryPi OS, I had some luck using the Pygame library animating a rectangle with growing height. I now want to use Pyaudio to see if I can get volume data from an input signal in real time. 

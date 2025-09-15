@@ -1,4 +1,4 @@
-//Notes for Strudel music making with code//
+Notes(//Notes for Strudel music making with code//
 
 Controlling REPL:
 Crt & Enter , run code
@@ -6,17 +6,19 @@ Crt & + , stop code
 
 
 Functions:
-setcmp(180/4) , set the cycles per minute, this would be 45CMP rather than the default 30CPM
-
 sound() , function that plays samples
 sound(insect:0) , plays sample index 0 from sample set 'insect'
-sound("bd hh sd").bank("RolandTR707") , play bass drum, high hat, and snare samples from a Roland TR707 drum machine  
- - Note , adding more samples into the input of the sound() function changes the tempo to accomodate the preset 2 second Cycle every sound is fit into
-sound("<bd hh sd oh>") , the <> causes every sample to be played for one Cycle, this would play over the course of 8 seconds
-sound("<bd hh sd oh>*16") , This speeds up each cycle 16 times the normal speed, this would play over the course of .5 seconds
-sound("bd - sd - oh") , use - or ~ as a rest
-sound("bd [hh hh] bd [sn sn]") , use [] to create subsequences, fraction subdivisions of cycles per sample
+sound("bd hh sd oh").bank("RolandTR707") ,  Play a bass drum, high hat, snare drum, and open hat from a 707
+sound("<bd hh sd oh>") , Plays each drum sample for a single 2(s) cycle, this would be a total of 8(s)
+sound("<bd hh sd oh bd oh sd hh>*8") , this sample will pla 8 times faster, taking 2(s) to play
+sound("bd - sd -") or sound("bd ~ sd ~") , either - or ~ acts as a rest
 
+setcpm(120/4) , sets the ratio of cycles per minute, 120(c)/4(m) could work as 30BPM
+ 
+
+Notes:
+-Drum Machines can be loaded, examples such as AkaiLinn, RhythmAce, ViscoSpaceDrum
+-All sounds played by the sound function fit within a cycle, which is predefine as 2(s) long
 
 Resources:
 -REPL
