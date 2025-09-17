@@ -19,3 +19,8 @@ Cairo can be used to create images, which can be automated to be generated to cr
 
 9/15/2025
 After struggling to get Manim installed on RaspberryPi OS, I had some luck using the Pygame library animating a rectangle with growing height. I now want to use Pyaudio to see if I can get volume data from an input signal in real time. 
+
+9/16/2025
+Was working with Numpy to try simple audio generation, struggling to get access to audio resources on a samsung tablet running Android OS. The Pi4 arrived, I'm currently configuring it to continue project development primarily on this platform. Running DietPi os and XFCE for lightweight build to get better audio & video performance.
+
+
