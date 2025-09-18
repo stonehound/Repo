@@ -8,7 +8,9 @@ import numpy as np
 # Create a dataset ranging from -10 to 10 with 100 steps
 t = np.linspace(-10, 10, 100)
 # Create a function to be plotted
-sig = 1 / (1 + np.exp(-t))
+# sig = 1 / (1 + np.exp(-t))
+# secondary function to be plotted
+sig = np.sin(t)
 
 # Setup Plot
 # Create the plot obeject
