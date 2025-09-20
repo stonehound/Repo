@@ -1,4 +1,0 @@
-#This is a guide to writing docker compose .yaml files:
-
-
-
