@@ -23,7 +23,11 @@ After struggling to get Manim installed on RaspberryPi OS, I had some luck using
 9/16/2025
 Was working with Numpy to try simple audio generation, struggling to get access to audio resources on a samsung tablet running Android OS. The Pi4 arrived, I'm currently configuring it to continue project development primarily on this platform. Running DietPi os and XFCE for lightweight build to get better audio & video performance.
 
-9/17/2050
+9/17/2025
 Switching back to working on the Pi4 as the adafruit soundcard arrived. Ilearned that the install was built around Raspian OS and had to change the operating scraping much of my efforts from the previous day. After several hours of install and testing, it passed preliminary soundcheck! I have installed some sound processing python libraries and essentials like numpy and scipy. I want to install a lightweight head for simple graphics processing but will leave that and futher sound testing for tomorrow. The last order of business is backing this record up to git.
+
+9/21/2025
+I have been practicing the fundamentals of numpy which goes hand-in-hand with practicing the fundamentals of python. Given it will be the base of the sound generation and sound sample in terms of storing amplitudes as array and manipulating sound with with array operations. I'd prefer to invest some time in improving my foundations to avoid increased frequency of obstacles during development. I need to get more fleunt in creating classes and modules so I can construct the tools I'll use to continue the production of my art.
+
 
 
