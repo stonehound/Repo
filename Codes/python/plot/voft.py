@@ -1,5 +1,5 @@
 """
-Graphing a Velocity as a function of Time example for Deriving a Position as a function of Time model including acceleration
+Graphing a Velocity as a function of Time example for deriving a Position as a function of Time model including Acceleration
 """
 # Libraries for matplotlib and numpy to handle calculations for the function to be plotted
 import matplotlib.pyplot as plt
